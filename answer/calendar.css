@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#controller {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  user-select: none;
+}
+
+#controller .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  cursor: pointer;
+  background: #c3c3c3;
+  font-size: 22px;
+}
+#controller .button:hover {
+  background: #969696;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead td {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+
+tbody td {
+  width: 100px;
+  height: 100px;
+  padding: 6px;
+  vertical-align: top;
+}
+
+td .today {
+  background: red;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

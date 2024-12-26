@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../calendar.css" />
+</head>
+
+<body>
+  <div id="controller">
+    <div class="button" onclick="prevMonth()">←</div>
+    <h2 id="date"></h2>
+    <div class="button" onclick="nextMonth()">→</div>
+  </div>
+  <table border='1'>
+    <thead>
+      <tr>
+        <td>일</td>
+        <td>월</td>
+        <td>화</td>
+        <td>수</td>
+        <td>목</td>
+        <td>금</td>
+        <td>토</td>
+      </tr>
+    </thead>
+    <tbody id='calendar'>
+    </tbody>
+  </table>
+  <script src="./index.js"></script>
+</body>
+
+</html>

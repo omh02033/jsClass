@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+}
+.search {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.search > input {
+  width: 100%;
+  outline: none;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: rgb(227, 227, 227);
+}
+.search > button {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background: rgb(120, 120, 230);
+  color: #fff;
+  cursor: pointer;
+}
+#blogContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.blog {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid black;
+  padding: 12px;
+}
+.blog > .head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.blog > .head > .title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.blog > .head > .date {
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="search">
+    <select name="order" id="order" onchange="orderBlog()">
+      <option value="length">글자순</option>
+      <option value="new">최신순</option>
+      <option value="old">오래된순</option>
+    </select>
+    <input type="text" placeholder="키워드 입력" id="searchInput">
+    <button onclick="searchKeyword()">검색</button>
+  </div>
+  <div id="blogContainer"></div>
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -70,31 +70,22 @@ const orderBlog = () => {
   switch (order.value) {
     case 'length':
       setBlog(blogs.sort((a, b) => {
-        if (a.content.length < b.content.length) {
-          return 1;
-        } else if (a.content.length > b.content.length) {
-          return -1;
-        }
+        if (a.content.length < b.content.length) return 1;
+        if (a.content.length > b.content.length) return -1;
         return 0;
       }));
       break;
     case 'new':
       setBlog(blogs.sort((a, b) => {
-        if (a.createdAt.getTime() < b.createdAt.getTime()) {
-          return 1;
-        } else if (a.createdAt.getTime() > b.createdAt.getTime()) {
-          return -1;
-        }
+        if (a.createdAt.getTime() < b.createdAt.getTime()) return 1;
+        if (a.createdAt.getTime() > b.createdAt.getTime()) return -1;
         return 0;
       }));
       break;
     case 'old':
       setBlog(blogs.sort((a, b) => {
-        if (a.createdAt.getTime() < b.createdAt.getTime()) {
-          return -1;
-        } else if (a.createdAt.getTime() > b.createdAt.getTime()) {
-          return 1;
-        }
+        if (a.createdAt.getTime() < b.createdAt.getTime()) return -1;
+        if (a.createdAt.getTime() > b.createdAt.getTime()) return 1;
         return 0;
       }));
       break;

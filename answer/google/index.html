@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+    #header {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 16px;
+      gap: 14px;
+    }
+    #header > a {
+      text-decoration: none;
+      color: #4c4c4c;
+    }
+    #profile {
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      background: gray;
+    }
+    #container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 42px;
+    }
+    #logo {
+      display: flex;
+      font-size: 82px;
+      font-weight: 900;
+    }
+    #content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+    #input {
+      width: 80%;
+      max-width: 700px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      border-radius: 100px;
+      padding: 12px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #input > .material-symbols-outlined {
+      color: #4c4c4c;
+    }
+    #input > input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+    #favorite {
+      width: 80%;
+      max-width: 700px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    #favorite > .item {
+      width: 112px;
+      height: 112px;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+    #favorite > .item > .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 24px;
+    }
+    #favorite > .item > span {
+      font-size: 14px;
+      white-space: nowrap;
+    }
+    #favorite > .item:hover {
+      background: #cecece;
+    }
+    #favorite > .item > div.icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(183, 183, 255);
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <a href="#">Gmail</a>
+    <a href="#">이미지</a>
+    <svg class="gb_D" focusable="false" height="24px" viewBox="0 -960 960 960" width="24px"> <path d="M209-120q-42 0-70.5-28.5T110-217q0-14 3-25.5t9-21.5l228-341q10-14 15-31t5-34v-110h-20q-13 0-21.5-8.5T320-810q0-13 8.5-21.5T350-840h260q13 0 21.5 8.5T640-810q0 13-8.5 21.5T610-780h-20v110q0 17 5 34t15 31l227 341q6 9 9.5 20.5T850-217q0 41-28 69t-69 28H209Zm221-660v110q0 26-7.5 50.5T401-573L276-385q-6 8-8.5 16t-2.5 16q0 23 17 39.5t42 16.5q28 0 56-12t80-47q69-45 103.5-62.5T633-443q4-1 5.5-4.5t-.5-7.5l-78-117q-15-21-22.5-46t-7.5-52v-110H430Z"></path> </svg>
+    <svg class="gb_E" focusable="false" height="24px" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path><image src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="" height="24" width="24" style="border:none;display:none \9"></image></svg>
+    <div id="profile"></div>
+  </div>
+  <div id="container">
+    <div id="logo">
+      <span style="color: #4282F4;">G</span>
+      <span style="color: #DB4437;">o</span>
+      <span style="color: #F4B400;">o</span>
+      <span style="color: #4282F4;">g</span>
+      <span style="color: #0F9D58;">l</span>
+      <span style="color: #DB4437;">e</span>
+    </div>
+    <div id="content">
+      <div id="input">
+        <span class="material-symbols-outlined">
+          search
+        </span>
+        <input type="text" placeholder="Google 검색 또는 URL 입력">
+        <span class="material-symbols-outlined">
+          mic
+        </span>
+        <span class="material-symbols-outlined">
+          photo_camera
+        </span>
+      </div>
+      <div id="favorite">
+        <div class="item">
+          <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="" class="icon">
+          <span>github</span>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <span class="material-symbols-outlined">
+              add
+            </span>
+          </div>
+          <span>바로가기 추가</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

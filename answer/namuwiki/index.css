@@ -1,0 +1,440 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+table {
+  width: 100%;
+  border: 2px solid #00a495;
+  background: #fff;
+  border-collapse: collapse;
+  border-spacing: 2px;
+  text-indent: 0;
+}
+table td {
+  padding: 5px 10px;
+}
+a {
+  text-decoration: none;
+  color: #0275d8;
+}
+svg {
+  fill: currentColor;
+}
+
+.header {
+  width: 100%;
+  background: linear-gradient(90deg,#00a69c,#00a69c,#28b472);
+  padding: 8px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.header .nav .logo {
+  height: 40px;
+  width: auto;
+}
+.header .nav .button {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: .7rem;
+}
+.header .nav svg {
+  color: white;
+  height: 1.2rem;
+}
+.header .nav .button span {
+  color: white;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+
+.header .right {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.header .right .input {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+.header .right .input .shuffle {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header .right svg {
+  width: .85rem;
+  color: #212529;
+}
+.header .right .input .search {
+  width: 15rem;
+  height: 40px;
+  border-radius: 4px;
+  padding: .6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white
+}
+.header .right .input .search input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.header .right .input .search .buttons {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+.header .right .profile {
+  height: 1.2rem;
+  width: auto;
+  color: white;
+}
+
+.box {
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.container {
+  width: 100%;
+  padding: 1rem 5%;
+  display: flex;
+  gap: 1rem;
+}
+.main {
+  width: 77%;
+}
+.main .contents {
+  width: 100%;
+  padding: 2rem;
+}
+.main .titlebox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.main .titlebox .title > div {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.main .titlebox .title .mark {
+  box-shadow: inset 0 -0.8rem 0 #d4f0e3;
+  line-height: 1;
+  word-break: break-all;
+}
+.main .titlebox .time {
+  color: rgba(33,37,41,.749);
+  font-size: .9rem;
+}
+.main .titlebox .buttons {
+  display: flex;
+  gap: .5rem;
+}
+.main .titlebox .buttons > div {
+  background: #fff;
+  border-radius: .3rem;
+  border: 1px solid #dadada;
+  display: flex;
+  height: 2.25rem;
+}
+.main .titlebox .buttons .group {
+  gap: 0;
+  position: relative;
+}
+.main .titlebox .buttons .group .button {
+  display: flex;
+  padding: .4rem .6rem;
+  justify-content: center;
+  align-items: center;
+  gap: .6rem;
+  color: rgba(33,37,41,.749);
+  height: 100%;
+  border-right: 1px solid #dadada;
+  cursor: pointer;
+}
+.main .titlebox .buttons .group .button:hover {
+  background: #e8e8e8;
+}
+.main .titlebox .buttons .group::after {
+  content: '19k';
+  background: #fff;
+  padding: 0 .4rem;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 0;
+  top: 0;
+  font-size: .8rem;
+  color: #000b;
+}
+.button.last {
+  border-right: none !important;
+}
+.main .titlebox .buttons svg {
+  height: 1rem;
+  width: auto;
+  color: rgba(33,37,41,.749);
+}
+.main .titlebox .buttons .menu {
+  justify-content: center;
+  align-items: center;
+  width: 2.25rem;
+}
+
+.main .classifi {
+  padding: .4rem;
+  margin-bottom: 2rem;
+}
+
+.main .welcome {
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: .6rem;
+}
+.main .welcome .title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.main .welcome > span {
+  font-size: .9rem;
+}
+.main .welcome .mark {
+  color: #00a495;
+  text-decoration: none;
+}
+
+.main .guide td {
+  border: 1px solid #ddd;
+}
+.main .guide td:first-child {
+  background: #00a495;
+  text-align: centerk;
+}
+.main .guide img {
+  width: 4rem;
+  height: 4rem;
+}
+.main .guide td:last-child {
+  width: 90%;
+}
+.main .guide td:last-child > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .2rem;
+}
+.main .guide td .title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.hr {
+  width: 100%;
+  border-top: 1px solid #dadada;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.main .project {
+  margin-bottom: 12px;
+}
+.main .project thead tr,
+.main .project tfoot tr {
+  background: #00a495;
+}
+.main .project thead th,
+.main .project tfoot td {
+  color: white;
+  text-align: center;
+}
+.main .project thead th {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.main .project tbody tr:first-child td:first-child {
+  width: 70px;
+  padding: .5rem;
+}
+.main .project tbody img {
+  width: 60px;
+  height: auto;
+}
+.main .project td {
+  border: 1px solid #ddd;
+}
+.main .project tbody td:last-child {
+  padding: 0 .5rem;
+}
+
+.main .about td {
+  padding: 8px 10px;
+}
+.main .about tr:nth-child(odd) td div {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+}
+.main .about tr:nth-child(odd) td div img {
+  width: 25px;
+  height: 25px;
+}
+.main .about tr:nth-child(odd) td div a {
+  color: #00a495;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.main .about tr:nth-child(even) td {
+  background: #00a495;
+  color: white;
+  font-size: .9rem;
+}
+
+.main .noti {
+  border: 1px solid gray;
+  border-top: 5px solid #00A495;
+  padding: 12px;
+}
+.main .noti hr {
+  border: 0;
+  border-top: .0625rem solid #ccc;
+  box-sizing: content-box;
+  height: 0;
+  margin: .625rem 0;
+}
+.main .noti .title {
+  color: #00a495;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.main .noti a:last-child {
+  color: #090;
+}
+.main .noti ul {
+  margin: .4rem 0 .4rem 1.5rem;
+  padding-left: .5rem;
+}
+.main .cc {
+  padding: 1.5rem;
+  text-align: right;
+  font-size: .9rem;
+}
+
+.container .side {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+
+.side .box {
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.side .live ol {
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+  font-size: .9rem;
+}
+
+.side .change .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.side .change .title .content,
+.side .news .title {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: .5rem;
+  font-weight: 600;
+}
+.side .change .title .arrow {
+  width: auto;
+  height: 1.1rem;
+  color: rgba(33,37,41,.749);
+}
+.side .change .menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .9rem;
+  margin: .5rem 0;
+}
+.side .change .menu span {
+  color: #212529;
+  font-size: .8rem;
+}
+
+.side .change .title .content svg,
+.side .news .title svg {
+  color: rgba(33,37,41,.502);
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.side .news .menu {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  font-size: .9rem;
+  width: 100%;
+}
+.side .news .menu a {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+.side .news .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: .3rem 0;
+  border: 1px solid #dadada;
+  border-radius: 14px;
+  cursor: pointer;
+  display: flex;
+  color: #212529;
+  font-size: .9rem;
+}
+.side .news .button svg {
+  width: .75rem;
+  margin-left: .25rem;
+}
+
+.foot {
+  width: 100%;
+  background: white;
+  height: 8rem;
+  border-top: 1px solid #dadada;
+}

@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  padding-top: 60px;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  padding: 0 15%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(30px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header .logo {
+  height: 20px;
+}
+.header .menus {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header .menus a {
+  color: #fff;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.container {
+  padding: 3rem 15%;
+}
+.container .title {
+  font-size: 2.875rem;
+  font-weight: 700;
+  color: rgb(25, 31, 40);
+  margin-bottom: 4.25rem;
+}
+
+.container .contents {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+.container .contents .menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  cursor: pointer;
+}
+.container .contents .menu .content {
+  padding: 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1 1 0;
+}
+.container .contents .menu .content p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.container .contents .menu .content .type,
+.container .contents .menu .content .time {
+  font-size: .875rem;
+  font-weight: 400;
+  color: rgb(139, 149, 161);
+}
+.container .contents .menu .content .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: .2s ease-in-out;
+}
+.container .contents .menu .content .subtitle {
+  font-size: 1.25rem;
+}
+.container .contents .menu img {
+  margin: .75rem 0;
+  height: 10rem;
+  object-fit: cover;
+  aspect-ratio: 1.5 / 1;
+  border-radius: 14px;
+  transition: .2s ease-in-out;
+}
+.container .contents .menu:hover .content .title {
+  color: #007bff;
+}
+.container .contents .menu:hover img {
+  transform: translateY(-5%);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.container .controller {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.container .controller .arrow {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #a8b2bc;
+  cursor: pointer;
+}
+.container .controller .arrow:hover {
+  color: #777f87;
+}
+.container .controller .button {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6b7684;
+}
+.container .controller .button.active {
+  color: #333d4b;
+  background: rgba(0,27,55,0.1);
+}
+.container .controller .button:not(.button.active):hover {
+  background: rgba(0,27,55,0.05);
+}
+.container .controller .more svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.container .morenews {
+  margin-top: 60px;
+  padding: .625rem 1rem;
+  border-radius: 7px;
+  background-color: rgb(242, 244, 246);
+  color: rgb(78, 89, 104);
+  width: fit-content;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .2s ease;
+}
+.container .morenews:hover {
+  background-color: rgb(198, 198, 198);
+}

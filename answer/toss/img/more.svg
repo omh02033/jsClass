@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="line-icon">
+  <defs>
+    <path id="icn-navigation-more-a" d="M0 0h24v24H0z"></path>
+  </defs>
+  <g fill="#333d4b">
+    <path d="M4.8 10.4c.9 0 1.6.7 1.6 1.6 0 .4-.2.8-.5 1.1-.3.3-.7.5-1.1.5-.9 0-1.6-.7-1.6-1.6s.7-1.6 1.6-1.6z">
+    </path>
+    <circle cx="19.2" cy="12" r="1.6"></circle>
+    <circle cx="12" cy="12" r="1.6"></circle>
+  </g>
+</svg>

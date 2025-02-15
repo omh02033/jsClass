@@ -108,11 +108,7 @@ body {
 .container .controller .arrow {
   width: 1.5rem;
   height: 1.5rem;
-  color: #a8b2bc;
   cursor: pointer;
-}
-.container .controller .arrow:hover {
-  color: #777f87;
 }
 .container .controller .button {
   width: 2.25rem;
@@ -131,7 +127,7 @@ body {
 .container .controller .button:not(.button.active):hover {
   background: rgba(0,27,55,0.05);
 }
-.container .controller .more svg {
+.container .controller .more {
   width: 1.5rem;
   height: 1.5rem;
 }

@@ -22,9 +22,6 @@ a {
   text-decoration: none;
   color: #0275d8;
 }
-svg {
-  fill: currentColor;
-}
 
 .header {
   width: 100%;
@@ -49,8 +46,7 @@ svg {
   align-items: center;
   gap: .7rem;
 }
-.header .nav svg {
-  color: white;
+.header .nav img {
   height: 1.2rem;
 }
 .header .nav .button span {
@@ -78,10 +74,10 @@ svg {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding: 12px;
 }
-.header .right svg {
+.header .right img {
   width: .85rem;
-  color: #212529;
 }
 .header .right .input .search {
   width: 15rem;
@@ -106,7 +102,6 @@ svg {
 .header .right .profile {
   height: 1.2rem;
   width: auto;
-  color: white;
 }
 
 .box {
@@ -191,10 +186,9 @@ svg {
 .button.last {
   border-right: none !important;
 }
-.main .titlebox .buttons svg {
+.main .titlebox .buttons img {
   height: 1rem;
   width: auto;
-  color: rgba(33,37,41,.749);
 }
 .main .titlebox .buttons .menu {
   justify-content: center;
@@ -395,9 +389,8 @@ svg {
   font-size: .8rem;
 }
 
-.side .change .title .content svg,
-.side .news .title svg {
-  color: rgba(33,37,41,.502);
+.side .change .title .content img,
+.side .news .title img {
   width: 1.3rem;
   height: 1.3rem;
 }
@@ -427,7 +420,7 @@ svg {
   color: #212529;
   font-size: .9rem;
 }
-.side .news .button svg {
+.side .news .button img {
   width: .75rem;
   margin-left: .25rem;
 }
